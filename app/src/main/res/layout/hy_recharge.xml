@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--自定义标题栏-->
+    <com.ivmai.vidget.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/zz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="充值金额:"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hy_recharge_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/boder"
+                android:gravity="left|center_vertical"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="配套金额:"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hy_recharge_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boder"
+                android:gravity="left|center_vertical"      android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"></LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/money_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <EditText
+            android:id="@+id/hy_recharge_input"
+            android:layout_width="110dp"
+            android:layout_height="42dp"
+            android:layout_gravity="left"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/zidingyijinge"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:hint="自定义金额"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/hy_chongzhifangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/hywechat"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信支付" />
+
+            <RadioButton
+                android:id="@+id/hyalipay"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="支付宝支付" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/hyivmai"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:checked="true"-->
+                <!--android:text="爱微币支付" />-->
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/hy_chongzhi_button"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_corners"
+            android:text="确认充值" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SWZxing/SWZxing.iml" filepath="$PROJECT_DIR$/SWZxing/SWZxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidupush/baidupush.iml" filepath="$PROJECT_DIR$/baidupush/baidupush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kehuduan.iml" filepath="$PROJECT_DIR$/kehuduan.iml" />
+    </modules>
+  </component>
+</project>

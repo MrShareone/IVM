@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jianbian"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ningdetihuoma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的提货码"
+            android:textColor="#f4f492"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/dp_name_show"
+            android:layout_below="@+id/ningdetihuoma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="皇冠蛋糕"
+            android:textColor="#efc372"
+            android:textSize="28sp"/>
+
+
+
+        <ImageView
+            android:id="@+id/tihuoma_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back" />
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/yemianback"-->
+            <!--android:layout_above="@+id/tihuoma_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#00ffffff"/>-->
+
+
+        <!--<ListView-->
+            <!--android:id="@+id/tihuoma_list"-->
+
+            <!--android:layout_below="@+id/dp_name_show"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"></ListView>-->
+        <TextView
+            android:id="@+id/tiqu_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tihuoma_show"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/tihuoma_show"
+            android:layout_below="@+id/dp_name_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120Uv11"
+            android:textColor="#ffffff"
+            android:textSize="35sp"/>
+        <TextView
+            android:id="@+id/sp_show"
+            android:layout_below="@+id/tihuoma_show"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="商品详情"
+            android:textSize="18dp"
+            android:textColor="#585452"/>
+
+        <Button
+            android:id="@+id/tihuoma_button"
+            android:background="@drawable/button_corners2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="确认提货"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

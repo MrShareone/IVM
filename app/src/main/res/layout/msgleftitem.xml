@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headpic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ivm_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/msgblock"
+        android:layout_toRightOf="@+id/headpic"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/button_corners5"
+        >
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:text="去哪儿吃饭啊去吃"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:text="00:31:41"
+        android:textSize="13sp"
+        android:textColor="#9b9393"
+        android:layout_below="@+id/content"
+        android:layout_alignRight="@+id/content"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

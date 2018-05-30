@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#eae8e8</color>
+    <color name="dark_gray">#b4b3b3</color>
+    <color name="light_blue">#9bbade</color>
+    <color name="light_yellow">#ffface</color>
+    <color name="light_purple">#b8c7ff</color>
+    <color name="cerulean">#abfaff</color>
+    <color name="golden">#d19f2c</color>
+    <color name="siver">#a3a2a6</color>
+    <color name="copper">#bc972c</color>
+
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#ff75a6ff</color>
+    <color name="red">#E1423C</color>
+    <color name="translucence">#506050</color>
+    <color name="bg_gray">#e2e2e2</color>
+    <color name="green">#65e17b</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <!--GREY & BLUEGRAY   禁欲系主题-->
+    <color name="dark_primary_color">#616161</color>
+    <color name="light_primary_color">#F5F5F5</color>
+    <color name="primary_color">#9E9E9E</color>
+    <color name="text_icons_color">#212121</color>
+    <color name="accent_color">#607D8B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider_color">#BDBDBD</color>
+
+
+    <!--爱微买主题色-->
+    <color name="main_red">#FFED3538</color>
+    <color name="main_light_blue">#5ac5f2</color>
+    <color name="main_blue">#02a3e8</color>
+    <color name="main_dark_blue">#FF017DB3</color>
+    <color name="main_darkx2_blue">#00587e</color>
+
+</resources>
+
+

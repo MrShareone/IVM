@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<item >
+    <shape>
+    <!--&lt;!&ndash; 圆角 &ndash;&gt;-->
+    <corners
+        android:radius="20dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"/><!-- 设置圆角半径 -->
+    <solid
+        android:color="@color/cerulean"/><!-- 填充的颜色 -->
+    </shape>
+</item>
+    <item android:state_checked="true">
+        <shape>
+        <corners
+            android:radius="20dp"
+            android:topLeftRadius="2dp"
+            android:topRightRadius="2dp"
+            android:bottomLeftRadius="2dp"
+            android:bottomRightRadius="2dp"/><!-- 设置圆角半径 -->
+        <solid
+            android:color="#ffffff"/><!-- 填充的颜色 -->
+        </shape>
+    </item>
+    <!--&lt;!&ndash; 渐变 &ndash;&gt;-->
+    <!--<gradient-->
+        <!--android:startColor="@android:color/white"-->
+        <!--android:centerColor="@android:color/black"-->
+        <!--android:endColor="@android:color/black"-->
+        <!--android:useLevel="true"-->
+        <!--android:angle="45"-->
+        <!--android:type="radial"-->
+        <!--android:centerX="0"-->
+        <!--android:centerY="0"-->
+        <!--android:gradientRadius="90"/>-->
+
+    <!--&lt;!&ndash; 间隔 &ndash;&gt;-->
+    <!--<padding-->
+        <!--android:left="2dp"-->
+        <!--android:top="2dp"-->
+        <!--android:right="2dp"-->
+        <!--android:bottom="2dp"/>&lt;!&ndash; 各方向的间隔 &ndash;&gt;-->
+
+    <!--&lt;!&ndash; 大小 &ndash;&gt;-->
+    <!--<size-->
+        <!--android:width="50dp"-->
+        <!--android:height="50dp"/>&lt;!&ndash; 宽度和高度 &ndash;&gt;-->
+
+    <!--&lt;!&ndash; 填充 &ndash;&gt;-->
+
+    <!-- 描边，边框 -->
+    <!--<stroke-->
+        <!--android:width="2dp"-->
+        <!--android:color="@android:color/black"-->
+        <!--android:dashWidth="1dp"-->
+        <!--android:dashGap="2dp"-->
+        <!--/>-->
+
+</selector>

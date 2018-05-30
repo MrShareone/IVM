@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/orderitembg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stable_ddid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="订单编号："
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/ddid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stable_ddid"
+            android:layout_alignTop="@+id/stable_ddid"
+            android:layout_toRightOf="@+id/stable_ddid"
+            android:text=" "
+            android:textColor="@color/secondary_text" />
+
+
+        <TextView
+            android:id="@+id/dd_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stable_ddid"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/stable_ddid"
+            android:text=" " />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/darkview"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/topline"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_color" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/product_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/darkview"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cake"
+        app:riv_corner_radius="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/textmsgholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_pic"
+        android:layout_alignTop="@+id/product_pic"
+        android:layout_toRightOf="@+id/product_pic"
+        >
+
+        <TextView
+            android:id="@+id/products_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text=" "
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/call_icon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/products_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/products_name"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:src="@drawable/call" />
+
+        <TextView
+            android:id="@+id/products_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabs"
+            android:layout_marginTop="6dp"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/pickup_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/products_num"
+            android:maxLines="1"
+            android:layout_marginTop="6dp"
+            android:text=" " />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/products_name"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/real_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text=" "
+            android:textColor="@color/main_red"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

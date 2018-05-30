@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--自定义标题栏-->
+    <com.ivmai.vidget.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/boder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="充值账号:"/>
+            <TextView
+                android:id="@+id/ivb_recharge_khid"
+                android:background="@drawable/boder"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="充值金额:"/>
+            <TextView
+                android:id="@+id/ivb_recharge_money"
+                android:background="@drawable/boder"
+                android:layout_width="160dp"
+                android:text="100"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/ivb_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="自定义金额："
+                />
+
+            <EditText
+                android:id="@+id/ivb_recharge_input"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit2_corners"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:text="0" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/pay_method"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信支付"/>
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="支付宝支付"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/confirmrecharge_button"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_corners"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:text="确认充值"/>
+    </LinearLayout>
+</LinearLayout>

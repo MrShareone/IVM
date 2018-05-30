@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:padding="20dp"
+    >
+    <ImageView
+        android:id="@+id/register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_title"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/register_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_corners"
+            android:hint="手机号"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/register_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_corners"
+            android:hint="密码"
+            android:inputType="textWebPassword"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/repeat_password"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/register_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_corners"
+            android:hint="重复密码"
+            android:inputType="textWebPassword"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_button"
+            android:layout_below="@+id/repeat_password"
+            android:layout_marginTop="50dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_corners"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <CheckBox
+                android:id="@+id/xieyi_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="我已同意" />
+
+            <TextView
+                android:id="@+id/xieyi_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《爱微迈服务协议》" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

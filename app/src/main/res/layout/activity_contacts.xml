@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.ivmai.kehu.chat.activity.Contacts">
+
+    <!--自定义标题栏-->
+    <com.ivmai.vidget.TitleLayout
+        android:id="@+id/titlebar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_below="@id/titlebar"
+        android:background="@color/white"
+        android:layout_height="50dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <EditText
+            android:id="@+id/search_edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_edittext"
+            android:maxLines="1"
+            android:paddingRight="50dp"
+            android:paddingLeft="10dp"
+            android:hint="输入对方手机号搜索"
+            android:inputType="text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/search_icon_img"
+            android:scaleType="centerInside"
+            android:src="@drawable/newsearch"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contactsrecyclerview"
+        android:layout_below="@+id/search_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

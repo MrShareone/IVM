@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <!--自定义标题栏-->
+    <com.ivmai.vidget.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/user_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/xiaoxin"
+        />
+
+        <Button
+            android:id="@+id/change_avatar_button"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_corners2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="点击修改头像"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

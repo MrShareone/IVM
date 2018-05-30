@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp"
+    >
+    <View
+        android:id="@+id/reddot"
+        android:background="@drawable/circle"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/bottom_tab_img"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+    <ImageView
+        android:id="@+id/bottom_tab_img"
+        android:src="@drawable/qrcodeicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/bottom_tab_tv"
+        android:layout_below="@+id/bottom_tab_img"
+        android:layout_marginTop="3dp"
+        android:text="扫码下单"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

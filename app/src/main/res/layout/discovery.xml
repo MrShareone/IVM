@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/my_search_bar"
+        layout="@layout/common_searchbar_layout" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/discovery_swip"
+        android:layout_below="@+id/my_search_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:id="@+id/not_fond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_gravity="top|center_horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/not_fond_pic"
+                    android:src="@drawable/location"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerInside"/>
+
+                <TextView
+                    android:text="附近似乎没有爱微卖商家..."
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/accent_color"
+                    android:layout_below="@+id/not_fond_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

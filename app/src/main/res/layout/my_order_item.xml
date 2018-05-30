@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <RelativeLayout
+        android:background="@drawable/boder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="时间："
+            android:id="@+id/p1"
+            />
+
+        <TextView
+            android:id="@+id/my_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/p1"
+        android:hint="--/--/--"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s3"
+            android:layout_below="@+id/my_order_time"
+            android:text="店名："
+            />
+        <TextView
+            android:id="@+id/my_order_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_order_time"
+            android:layout_toRightOf="@+id/s3"
+            android:hint="--"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s4"
+            android:layout_below="@+id/s3"
+            android:text="商品名："
+            />
+
+        <TextView
+            android:id="@+id/my_order_spm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s3"
+            android:layout_toRightOf="@+id/s4"
+            android:hint="--"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s5"
+            android:layout_below="@+id/s4"
+            android:text="订单可选标签："/>
+        <TextView
+            android:id="@+id/my_sp_label"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s4"
+            android:layout_toRightOf="@id/s5"
+            android:hint="无"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s2"
+            android:layout_below="@+id/s5"
+            android:text="价格："/>
+
+        <TextView
+            android:id="@+id/my_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/s2"
+            android:layout_below="@+id/s5"
+            android:hint="--"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1"
+            android:layout_below="@id/s2"
+            android:text="取货方式："/>
+
+        <TextView
+            android:id="@+id/sp_take_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/s1"
+            android:layout_below="@id/s2"
+            android:hint="--" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s1"
+            android:text="订单状态："/>
+        <TextView
+            android:id="@+id/my_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a"
+            android:layout_below="@+id/s1"
+            android:hint="--"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2"
+            android:layout_below="@+id/a"
+            android:text="数量："/>
+
+        <TextView
+            android:id="@+id/dingdannum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/p2"
+            android:layout_below="@+id/a"
+            android:hint="--"/>
+    </RelativeLayout>
+
+</LinearLayout>

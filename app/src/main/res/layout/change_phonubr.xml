@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--自定义标题栏-->
+    <com.ivmai.vidget.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/phone_numb_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="1234567890"
+            android:maxLength="11"
+            android:hint="请输入换绑手机号"/>
+            <Button
+                android:id="@+id/get_code_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:text="获取验证码"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/code_input"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:maxLength="6"
+            android:hint="输入验证码"/>
+        <Button
+            android:id="@+id/phone_submit_but"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_corners2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="确认换绑"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>
